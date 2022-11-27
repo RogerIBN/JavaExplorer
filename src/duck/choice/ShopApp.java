@@ -33,6 +33,18 @@ public class ShopApp {
                             + item.getPrice());
         }
         System.out.println("Your total is $" + c1.getTotalClothingCost());
-    }
 
+        Double average = 0.0;
+        Integer count = 0;
+
+        for (Clothing item : c1.getItems()) {
+            if (item.getSize().equals("L")) {
+                count++;
+                average += item.getPrice();
+            }
+        }
+
+        average = count > 0 ? average / count : 0.0;
+        System.out.println("Average price: $" + average + " (count: " + count + ")");
+    }
 }

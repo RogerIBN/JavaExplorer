@@ -7,6 +7,7 @@ public class Clothing {
 
     public final static Double MIN_PRICE = 10.0; // Minimum price of a clothing item
     public final static Double TAX_RATE = 0.2; // 20% tax of clothing items
+
     private String description, size;
     private Double price;
 
