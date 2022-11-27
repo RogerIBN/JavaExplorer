@@ -3,7 +3,7 @@ package duck.choice;
 /**
  * Clothing
  */
-public class Clothing {
+public class Clothing implements Comparable<Clothing> {
 
     public final static Double MIN_PRICE = 10.0; // Minimum price of a clothing item
     public final static Double TAX_RATE = 0.2; // 20% tax of clothing items
@@ -44,5 +44,15 @@ public class Clothing {
 
     public void setSize(String size) {
         this.size = size;
+    }
+
+    @Override
+    public String toString() {
+        return "Clothing -> Description=" + getDescription() + ", Size=" + getSize() + ", Price=$" + getPrice();
+    }
+
+    @Override
+    public int compareTo(Clothing clothing) {
+        return this.getDescription().compareTo(clothing.getDescription());
     }
 }

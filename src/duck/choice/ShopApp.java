@@ -1,5 +1,7 @@
 package duck.choice;
 
+import java.util.Arrays;
+
 public class ShopApp {
 
     public static void main(String[] args) {
@@ -24,13 +26,7 @@ public class ShopApp {
         System.out.println("Hello " + c1.getName() + "!");
         System.out.println("Your size is " + c1.getSize());
         for (Clothing item : c1.getItems()) {
-            System.out.println(
-                    " - Item: "
-                            + item.getDescription()
-                            + ", Size: "
-                            + item.getSize()
-                            + ", Price: $"
-                            + item.getPrice());
+            System.out.println(" - Item " + item);
         }
         System.out.println("Your total is $" + c1.getTotalClothingCost());
 
@@ -46,5 +42,10 @@ public class ShopApp {
 
         average = count > 0 ? average / count : 0.0;
         System.out.println("Average price: $" + average + " (count: " + count + ")");
+
+        Arrays.sort(c1.getItems());
+        for (Clothing item : c1.getItems()) {
+            System.out.println(" - Item " + item);
+        }
     }
 }
