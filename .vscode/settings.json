@@ -2,5 +2,15 @@
     "java.project.sourcePaths": [
         "src"
     ],
-    "discord.enabled": true
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "cSpell.ignoreWords": [
+        "emps"
+    ],
+    "editor.rulers": [
+        80,
+        120
+    ],
 }
