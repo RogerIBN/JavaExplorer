@@ -44,10 +44,16 @@ public class Customer {
         return size;
     }
 
+    /**
+     * @param size
+     */
     public void setSize(String size) {
         this.size = size;
     }
 
+    /**
+     * @param measurement
+     */
     public void setSize(Integer measurement) {
         switch (measurement) {
             case 1, 2, 3:
