@@ -1,6 +1,6 @@
-package leetcode;
+package interviews;
 
-public class Interview {
+public class AccentureJavaDeveloper {
     public static void main(String[] args) {
 
         int[] array = { 5904, 859, 9380, 772, 6180, 6000, 123, 4742, 5335, 5900, 636, 5865, 5303,
