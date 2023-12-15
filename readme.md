@@ -14,7 +14,7 @@ El proyecto se divide en varias carpetas:
 
 - [`src/`](src/): Aquí es donde se encuentra todo el código fuente del proyecto. Dentro de esta carpeta, encontrarás varias sub-carpetas, cada una correspondiente a un tema específico de Java. Por ejemplo, la carpeta [`choice`](duck/choice/) contiene clases que te ayudarán a entender la programación orientada a objetos en Java.
 
-- [`docs/](docs/)`: Esta carpeta contiene documentación útil para aprender Java. Por ejemplo, el archivo java_explorer.md proporciona una visión general de los modificadores de acceso en Java.
+- `[docs/](docs/)`: Esta carpeta contiene documentación útil para aprender Java. Por ejemplo, el archivo java_explorer.md proporciona una visión general de los modificadores de acceso en Java.
 
 - [`lib/`](lib/): Esta carpeta está destinada a contener cualquier biblioteca de terceros que pueda ser necesaria para el proyecto.
 
@@ -34,7 +34,7 @@ Aquí hay algunos ejemplos de lo que puedes encontrar en este proyecto:
 
 Además en la carpeta [`leetcode`](src/leetcode/) encontrarás ejemplos de soluciones a problemas de LeetCode en Java.
 
-En la carpeta [`interview/`](src/interview/) encontrarás ejemplos de soluciones a problemas de entrevistas de trabajo en Java.
+En la carpeta [`interview`](src/interview/) encontrarás ejemplos de soluciones a problemas de entrevistas de trabajo en Java.
 
 ## Recursos Adicionales
 
