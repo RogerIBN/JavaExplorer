@@ -4,7 +4,9 @@ package duck.choice;
  * Customer
  */
 public class Customer {
-    private String name, size;
+    private String name;
+    private String size;
+
     private Clothing[] items;
 
     /**
@@ -17,7 +19,7 @@ public class Customer {
     }
 
     public Clothing[] getItems() {
-        return items;
+        return this.items;
     }
 
     public void addItems(Clothing[] items) {
@@ -33,7 +35,7 @@ public class Customer {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -41,7 +43,7 @@ public class Customer {
     }
 
     public String getSize() {
-        return size;
+        return this.size;
     }
 
     /**
@@ -55,19 +57,11 @@ public class Customer {
      * @param measurement
      */
     public void setSize(Integer measurement) {
-        switch (measurement) {
-            case 1, 2, 3:
-                setSize("S");
-                break;
-            case 4, 5, 6:
-                setSize("M");
-                break;
-            case 7, 8, 9:
-                setSize("L");
-                break;
-            default:
-                setSize("XL");
-                break;
-        }
+        setSize(switch (measurement) {
+            case 1, 2, 3 -> "S";
+            case 4, 5, 6 -> "M";
+            case 7, 8, 9 -> "L";
+            default -> "XL";
+        });
     }
 }

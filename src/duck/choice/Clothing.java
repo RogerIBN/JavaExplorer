@@ -8,7 +8,8 @@ public class Clothing implements Comparable<Clothing> {
     public final static Double MIN_PRICE = 10.0; // Minimum price of a clothing item
     public final static Double TAX_RATE = 0.2; // 20% tax of clothing items
 
-    private String description, size;
+    private String description;
+    private String size;
     private Double price;
 
     /**
@@ -23,7 +24,7 @@ public class Clothing implements Comparable<Clothing> {
     }
 
     public String getDescription() {
-        return description;
+        return this.description;
     }
 
     public void setDescription(String description) {
@@ -31,15 +32,15 @@ public class Clothing implements Comparable<Clothing> {
     }
 
     public Double getPrice() {
-        return price * (1 + TAX_RATE);
+        return this.price * (1 + TAX_RATE);
     }
 
     public void setPrice(Double price) {
-        this.price = price > MIN_PRICE ? price : MIN_PRICE;
+        this.price = Math.max(price, MIN_PRICE);
     }
 
     public String getSize() {
-        return size;
+        return this.size;
     }
 
     public void setSize(String size) {
@@ -48,7 +49,11 @@ public class Clothing implements Comparable<Clothing> {
 
     @Override
     public String toString() {
-        return "Clothing -> Description=" + getDescription() + ", Size=" + getSize() + ", Price=$" + getPrice();
+        return String.format(
+                "Clothing -> Description=%s, Size=%s, Price=$%.2f",
+                getDescription(),
+                getSize(),
+                getPrice());
     }
 
     @Override

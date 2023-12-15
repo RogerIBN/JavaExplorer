@@ -6,9 +6,6 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
-    "cSpell.ignoreWords": [
-        "emps"
-    ],
     "editor.rulers": [
         80,
         120
