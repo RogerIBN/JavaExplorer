@@ -32,7 +32,7 @@ public class Problem1160 {
      * @param chars the string containing the characters to form the words
      * @return the total number of characters that can be formed
      */
-    public static int countCharacters(String[] words, String chars) {
+    public static int countCharacters(String[] words, final String chars) {
         int count = 0;
         int[] charsArray = new int[26];
         for (int i = 0; i < chars.length(); i++) {
@@ -57,7 +57,7 @@ public class Problem1160 {
      * @return true if the word can be formed using the characters in the array,
      *         false otherwise
      */
-    public static boolean canBeFormed(String word, int[] charsArray) {
+    public static boolean canBeFormed(String word, final int[] charsArray) {
         int[] wordsCharsArray = new int[26];
         for (int i = 0; i < word.length(); i++) {
 

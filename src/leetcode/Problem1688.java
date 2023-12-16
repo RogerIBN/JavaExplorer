@@ -56,7 +56,7 @@ public class Problem1688 {
      * @param n the number of teams in the tournament
      * @return the number of matches required
      */
-    public static int numberOfMatches(int n) {
+    public static int numberOfMatches(final int n) {
         /*
          * Every match eliminates one team, so the number of matches required
          * is equal to the number of teams minus one.

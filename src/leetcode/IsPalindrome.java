@@ -13,31 +13,25 @@ public class IsPalindrome {
         String[] words = { "like this", "annA", "Civic", "oso", "radaR" };
 
         for (String word : words) {
-            System.out.println("Esta palabra " + (isPalindrome2(word) ? "si" : "no") + " es un palíndromo: " + word);
+            System.out.println("Esta palabra " + (isPalindrome(word) ? "si" : "no") + " es un palíndromo: " + word);
         }
 
     }
 
     /**
-     * Comprueba si una palabra es un palíndromo.
+     * Verifica si una palabra es un palíndromo.
      * Un palíndromo es una palabra que se lee igual de izquierda a derecha y de
      * derecha a izquierda.
      *
-     * @param word la palabra a comprobar
-     * @return true si la palabra es un palíndromo, false en caso contrario
+     * @param word la palabra a verificar
+     * @return true si la palabra es un palíndromo, false de lo contrario
      */
     public static boolean isPalindrome(String word) {
-        String reversedString = new StringBuilder(word)
-                .reverse()
-                .toString();
-        return word.equalsIgnoreCase(reversedString);
-    }
-
-    public static boolean isPalindrome2(String word) {
-        String wordLowerCase = word.toLowerCase();
-        int length = wordLowerCase.length();
-        for (int i = 0; i < length / 2; i++) {
-            if (wordLowerCase.charAt(i) != wordLowerCase.charAt(length - i - 1)) {
+        final String WORD_LOWER_CASE = word.toLowerCase();
+        final int LENGTH = WORD_LOWER_CASE.length();
+        for (int leftI = 0; leftI < LENGTH / 2; leftI++) {
+            int rightI = LENGTH - leftI - 1;
+            if (WORD_LOWER_CASE.charAt(leftI) != WORD_LOWER_CASE.charAt(rightI)) {
                 return false;
             }
         }

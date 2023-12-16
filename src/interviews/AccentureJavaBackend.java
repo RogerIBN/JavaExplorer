@@ -13,7 +13,7 @@ public class AccentureJavaBackend {
      *
      * @param array the array of integers
      */
-    public static void getSumOfEvenAndOddNumbers(int[] array) {
+    public static void getSumOfEvenAndOddNumbers(final int[] array) {
 
         int sumOfOddNumbers = 0;
         int sumOfEvenNumbers = 0;

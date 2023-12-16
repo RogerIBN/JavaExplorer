@@ -74,7 +74,7 @@ public class Problem1436 {
      * @param paths The list of paths.
      * @return The destination city.
      */
-    public static String destCity(List<List<String>> paths) {
+    public static String destCity(final List<List<String>> paths) {
         // Create a map to store the paths
         Map<String, String> map = new HashMap<>();
 

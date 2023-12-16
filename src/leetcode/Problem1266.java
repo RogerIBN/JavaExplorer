@@ -44,7 +44,7 @@ public class Problem1266 {
      * @param points the array of points
      * @return the minimum time in seconds to visit all the points
      */
-    public static int minTimeToVisitAllPoints(int[][] points) {
+    public static int minTimeToVisitAllPoints(final int[][] points) {
         int time = 0;
         for (int i = 0; i < points.length - 1; i++) {
             time += maxDistanceBetween(points[i], points[i + 1]);
@@ -60,7 +60,7 @@ public class Problem1266 {
      * @param point2 the coordinates of the second point in the format [x, y]
      * @return the maximum distance between the two points
      */
-    public static int maxDistanceBetween(int[] point1, int[] point2) {
+    public static int maxDistanceBetween(final int[] point1, final int[] point2) {
         return Math.max(
                 Math.abs(point2[0] - point1[0]),
                 Math.abs(point2[1] - point1[1]));

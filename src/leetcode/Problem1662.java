@@ -20,7 +20,7 @@ public class Problem1662 {
      * @param word2 The second array of strings.
      * @return True if the arrays are equal, false otherwise.
      */
-    public static boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+    public static boolean arrayStringsAreEqual(final String[] word1, final String[] word2) {
         String string1 = String.join("", word1);
         String string2 = String.join("", word2);
 

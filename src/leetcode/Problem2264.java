@@ -48,10 +48,10 @@ public class Problem2264 {
     /**
      * Finds the largest 3-same-digit number in the given string.
      *
-     * @param num the string containing the number
+     * @@param num the string containing the number
      * @return the largest 3-same-digit number in the given string
      */
-    public static String largestGoodInteger(String num) {
+    public static String largestGoodInteger(final String num) {
         // start with the biggest digit 9
         // and go down to 0
         for (int i = 9; i >= 0; i--) {
