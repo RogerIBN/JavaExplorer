@@ -1,12 +1,20 @@
 package interviews;
 
-public class AccentureJavaDeveloper {
+public class AccentureJavaBackend {
     public static void main(String[] args) {
-
         int[] array = { 5904, 859, 9380, 772, 6180, 6000, 123, 4742, 5335, 5900, 636, 5865, 5303,
                 7848, 7393, 2313, 8338, 1934, 2998, 867, 6905, 2090, 4818, 3072, 2496 };
-        // Give me the sum of the odd numbers in the array and the sum of the even
-        // numbers in the array.
+        getSumOfEvenAndOddNumbers(array);
+    }
+
+    /**
+     * Calculates the sum of the odd numbers and the sum of the even numbers in the
+     * given array.
+     *
+     * @param array the array of integers
+     */
+    public static void getSumOfEvenAndOddNumbers(int[] array) {
+
         int sumOfOddNumbers = 0;
         int sumOfEvenNumbers = 0;
 
